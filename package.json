@@ -4,11 +4,13 @@
   "private": true,
   "description": "demo app for Odyssey's Client-Side GraphQL with React and Apollo course",
   "dependencies": {
+    "@apollo/client": "^3.13.8",
     "@apollo/space-kit": "^9.3.1",
     "@emotion/cache": "^11.4.0",
     "@emotion/core": "^10.1.1",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
+    "graphql": "^16.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-markdown": "^9.0.1",
@@ -18,6 +20,7 @@
   "scripts": {
     "test": "vitest",
     "start": "vite",
+    "generate": "graphql-codegen",
     "build": "vite build"
   },
   "browserslist": {
@@ -33,6 +36,8 @@
     ]
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.6",
+    "@graphql-codegen/client-preset": "^4.8.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
